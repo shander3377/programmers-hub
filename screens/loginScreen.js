@@ -42,7 +42,7 @@ export default class LoginScreen extends React.Component {
                   .auth()
                   .signInWithEmailAndPassword(email, password);
               if (response) {
-                  this.props.navigation.navigate("AskQuestionsScreen");
+                  this.props.navigation.navigate("HomeScreen");
               }
           } catch (error) {
               Alert.alert(error.message);
