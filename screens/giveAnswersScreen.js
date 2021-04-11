@@ -70,7 +70,7 @@ renderItem = ( {item, i} ) =>{
         <View>
             <Animatable.View animation="fadeInLeftBig">
              <AppHeader
-            title={"Home"}
+            title={"Give Answers"}
             navigation={this.props.navigation}
             color="black"
           />
@@ -87,9 +87,10 @@ renderItem = ( {item, i} ) =>{
         <View style={{ flex: 1 , backgroundColor: "white"}}>
      <Animatable.View animation="fadeInLeftBig">
              <AppHeader
-            title={"Home"}
+            title={"Give Answers"}
             navigation={this.props.navigation}
             color="black"
+            show={true}
           />
           </Animatable.View>
                       <TouchableOpacity onPress={()=>this.props.navigation.navigate("AnswerInputScreen",{qtopic: "mhm", qdescreption: "mhmhmhmhmhmhmmh"})}><Text style={{marginTop:50}}>give answers</Text></TouchableOpacity>

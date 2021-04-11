@@ -9,13 +9,13 @@ export const DrawerNavigator = createDrawerNavigator({
     AskQuestionsScreen : {
     screen : AskQuestionsScreen,
     navigationOptions:{
-      drawerIcon:<Icon name="home" type="entypo"/>
+      drawerIcon:<Icon name="question" type="fontisto"/>
     }
     },
     SearchScreen: {
       screen: SearchScreen,
       navigationOptions:{
-        drawerIcon:<Icon name="notifications" type="ionicons"/>
+        drawerIcon:<Icon name="search" type="ionicons"/>
       }
     },
     HomeScreen: {
@@ -26,6 +26,9 @@ export const DrawerNavigator = createDrawerNavigator({
     },
     GiveAnswersScreen: {
       screen: GiveAnswersScreen,
+      navigationOptions:{
+        drawerIcon:<Icon name="gift" type="feather"/>
+      }
     },
   },
 

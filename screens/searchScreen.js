@@ -102,6 +102,7 @@ console.warn(lastVisibleData)
             title={"Search Screen"}
             navigation={this.props.navigation}
             color="black"
+            show={true}
           />
      </Animatable.View>
           <Animatable.View animation="fadeInRightBig">

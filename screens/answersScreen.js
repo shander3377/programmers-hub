@@ -95,6 +95,14 @@ noAnswer = () =>{
     if(this.state.data.length === 0){
       return(
         <View>
+               <Animatable.View animation="fadeInLeftBig">
+             <AppHeader
+            title={"Answer Screen"}
+            navigation={this.props.navigation}
+            color="black"
+            show={false}
+          />
+          </Animatable.View>
       <Animatable.View animation="flipInX">
         <Text>Uh Oh, We couldnt find an answer to your question. </Text>
         <TouchableOpacity onPress={()=>this.props.navigation.navigate("AskQuestionsScreen")}>
@@ -107,7 +115,7 @@ noAnswer = () =>{
         </Animatable.View>
       </View>
       )
-    }
+    } else {
     return (
 
        
@@ -117,12 +125,14 @@ noAnswer = () =>{
 <Text style={styles.requestbuttontxt}>{this.props.navigation.getParam("topic")}</Text> */}
 {/* <Text>{this.state.data.ans}</Text>
 <Text>{this.state.data.qtopic}</Text> */}
-   <AppHeader
-            title={"Answers Screen"}
+       <Animatable.View animation="fadeInLeftBig">
+             <AppHeader
+            title={"Answer Screen"}
             navigation={this.props.navigation}
-            show={false}
             color="black"
+            show={false}
           />
+          </Animatable.View>
 <FlatList
                           keyExtractor={this.keyExtractor}
                           data={this.state.data}
@@ -134,7 +144,7 @@ noAnswer = () =>{
      
      
     );
-    
+}
   }
 }
 
